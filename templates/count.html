@@ -1,0 +1,16 @@
+<H1>There are. {{ count}} words in your text</H1>
+
+<H1>Your Text:</H1>
+{{ fulltext }}
+
+<H1>Word Count:</H1>
+
+{% for word,counttotal in sortedwords %}
+
+
+    {{ word }} - {{ counttotal }}
+    <br/>
+
+{% endfor %}
+
+
